@@ -8,6 +8,12 @@ public class Bird : MonoBehaviour
     private Rigidbody2D rb;
     private Camera mainCamera;
     private Vector2 startPosition, clampedPosition;
+    private Controlers inputActions;
+
+    private void Awake()
+    {
+        inputActions = new Controlers();
+    }
 
     void Start()
     {
